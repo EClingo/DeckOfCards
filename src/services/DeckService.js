@@ -18,6 +18,9 @@ export default {
     },
     addToPile(deckId, pileName, cards) {
         return http.get(`${deckId}/pile/${pileName}/add/?cards=${cards}`);
+    },
+    showPile(deckId, pileName){
+        return http.get(`${deckId}/pile/${pileName}/list/`);
     }
 
 
